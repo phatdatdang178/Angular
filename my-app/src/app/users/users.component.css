@@ -1,0 +1,35 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.list-group {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+h5 {
+    color: #495057;
+}
+
+.small {
+    color: #6c757d;
+}
+
+.badge {
+    font-size: 0.9rem;
+}

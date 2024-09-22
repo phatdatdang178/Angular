@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4">List of Users</h2>
+
+    <div *ngIf="users.length > 0">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li *ngFor="let user of users"
+                        class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">{{ user.name }}</h5>
+                            <small class="text-muted">{{ user.email }}</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Active</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="users.length === 0" class="text-center">
+        <p class="text-muted">No users found.</p>
+    </div>
+</div>
